@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/proj1-img.PNG";
+import projImg2 from "../assets/img/proj2-img.PNG";
+import projImg3 from "../assets/img/proj3-img.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,34 +11,24 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
+      title: "E-commerce Website",
       description: "Design & Development",
       imgUrl: projImg1,
+      live:"https://e-shophub.vercel.app/",
+      github:"https://github.com/mohammadaqib-web/E-commerce"
     },
     {
-      title: "Business Startup",
+      title: "Mentorship Platform",
       description: "Design & Development",
       imgUrl: projImg2,
+      live:"https://mentor-ship-m27o.vercel.app/",
+      github:"https://github.com/mohammadaqib-web/MentorShip"
     },
     {
-      title: "Business Startup",
+      title: "Twitter Clone",
       description: "Design & Development",
       imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      github:"https://github.com/mohammadaqib-web/Twitter-Clone",
     },
   ];
 
@@ -66,7 +56,7 @@ export const Projects = () => {
                   </Nav> */}
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row className="mt-5">
+                      <Row className="mt-5 mb-5">
                         {
                           projects.map((project, index) => {
                             return (
