@@ -15,7 +15,6 @@ export const Contact = () => {
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
       setFormDetails({
@@ -27,7 +26,8 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+    console.log(process.env.REACT_APP_API_CONTACT);
+    let response = await fetch(`${process.env.REACT_APP_API_CONTACT}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
