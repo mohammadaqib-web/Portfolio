@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/proj1-img.PNG";
 import projImg2 from "../assets/img/proj2-img.PNG";
 import projImg3 from "../assets/img/proj3-img.png";
+import projImg4 from "../assets/img/proj4-img.PNG";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,11 +12,11 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "E-commerce Website",
+      title: "AI-Powered-Social-Media",
       description: "Design & Development",
-      imgUrl: projImg1,
-      live:"https://e-shophub.vercel.app/",
-      github:"https://github.com/mohammadaqib-web/E-commerce"
+      imgUrl: projImg4,
+      live:"https://ai-social-network.vercel.app/",
+      github:"https://github.com/mohammadaqib-web/AI-Social-Media"
     },
     {
       title: "Mentorship Platform",
@@ -23,6 +24,13 @@ export const Projects = () => {
       imgUrl: projImg2,
       live:"https://mentor-ship-m27o.vercel.app/",
       github:"https://github.com/mohammadaqib-web/MentorShip"
+    },
+    {
+      title: "E-commerce Website",
+      description: "Design & Development",
+      imgUrl: projImg1,
+      live:"https://e-shophub.vercel.app/",
+      github:"https://github.com/mohammadaqib-web/E-commerce"
     },
     {
       title: "Twitter Clone",
